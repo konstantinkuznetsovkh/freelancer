@@ -13,6 +13,17 @@ body {
     margin: 0 auto;
 }
 
+.section {
+    padding: 64px 0 92px;
+}
+
+.section-title {
+    margin: 0 0 84px 0;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+}
+
 .hero {
     padding-top: 50px;
     padding-bottom: 150px;
@@ -30,6 +41,10 @@ body {
     margin-left: 20px;
 }
 
+.social-link:first-child {
+    margin-left: 0;
+}
+
 .hero-content {
     display: flex;
     justify-content: space-between;
@@ -37,7 +52,7 @@ body {
 }
 
 .hero-subtitle {
-    display: inline-block;
+    display: block;
     font-size: 24px;
     line-height: 28px;
     color: #FFBB01;
@@ -55,7 +70,7 @@ h1.hero-title {
 .hero-description {
     font-size: 16px;
     line-height: 28px;
-    max-width: 320px;
+    max-width: 410px;
     margin-bottom: 38px;
 }
 
@@ -74,9 +89,147 @@ h1.hero-title {
     width: 389px;
     height: 389px;
     border-radius: 50%;
-    background-image: url(../img/avatar.jpg);
+    background-image: url('../img/avatar.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
     border: 13px solid #fff;
+}
+
+/* features */
+.features {
+    background-color: #000;
+
+}
+
+.features-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features-item {
+    flex-basis: 30%;
+    margin-bottom: 63px;
+}
+
+.features-img {
+    display: block;
+    margin-bottom: 22px;
+}
+
+.features-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 16px 0;
+}
+
+.features-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+}
+
+/* contacts */
+.contacts-form {
+    background: #fff;
+    box-shadow: -5px 5px 0px #ffc41d;
+    border-radius: 5px;
+    max-width: 380px;
+    padding: 40px 48px 40px 49px;
+    width: 100%;
+}
+
+.form-title {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 0 29px 0;
+}
+
+.input {
+    background: #f8f8f8;
+    box-shadow: inset 0px 3px 10px rgba(199, 199, 199, .25);
+    border-radius: 5px;
+    padding: 18px 20px 18px 50px;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    line-height: 28px;
+
+}
+
+.input-name {
+    margin-bottom: 17px;
+    background-image: url('../img/user-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+}
+
+.input-phone {
+    margin-bottom: 17px;
+    background-image: url('../img/phone-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center left 20px;
+}
+
+.form-button {
+    width: 100%;
+}
+
+.contacts-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 76px;
+}
+
+.contacts-text {
+    flex-basis: 50%;
+}
+
+.contacts-data {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+}
+
+.contacts-phone,
+.contacts-mait {
+    flex-basis: 50%;
+    margin-bottom: 53px;
+}
+
+.contacts-social {
+    flex-basis: 100%;
+}
+
+.contacts-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 15px 0;
+}
+
+.contacts-link {
+    text-decoration: none;
+    color: inherit;
+    margin-right: 37px;
+}
+
+.contacts-link:hover {
+    text-decoration: underline;
+}
+
+.contacts-policy {
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #a5a5a5;
+    display: inline-block;
+    margin-top: 72px;
 }
