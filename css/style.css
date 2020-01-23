@@ -6,6 +6,7 @@ body {
     background-color: #20202D;
     color: #fff;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .container {
@@ -83,6 +84,7 @@ h1.hero-title {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 700;
+    display: inline-block;
 }
 
 .hero-avatar {
@@ -130,6 +132,90 @@ h1.hero-title {
     font-size: 16px;
     line-height: 28px;
     margin: 0;
+}
+
+/* projects */
+.projects {
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 95.44%);
+
+}
+
+.projects-slide {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project-text {
+    flex-basis: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-title {
+    flex-basis: 100%;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 41px 0;
+}
+
+.project-time,
+.project-cost {
+    flex-basis: 50%;
+    margin-bottom: 44px;
+}
+
+.project-time,
+.project-cost,
+.project-feedback {
+    display: flex;
+    align-items: flex-start;
+}
+
+.project-subtitle {
+    margin: 0 0 7px 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.project-image {
+    width: 100%;
+    height: 269px;
+    max-width: 328px;
+    border-radius: 6px;
+}
+
+.project-paragraph {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.project-icon {
+    margin-right: 16px;
+}
+
+.projects-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 44px 0 0 0;
+}
+
+.project-bullet {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffbb01;
+    border-radius: 50%;
+    margin: 0 5px 0 5px;
+}
+
+.project-bullet-active {
+    background: #ffbb01;
 }
 
 /* contacts */
@@ -199,7 +285,7 @@ h1.hero-title {
 }
 
 .contacts-phone,
-.contacts-mait {
+.contacts-mail {
     flex-basis: 50%;
     margin-bottom: 53px;
 }
